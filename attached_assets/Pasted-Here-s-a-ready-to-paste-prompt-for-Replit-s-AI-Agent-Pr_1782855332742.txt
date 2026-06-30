@@ -1,0 +1,37 @@
+Here's a ready-to-paste prompt for Replit's AI Agent:
+
+---
+
+**Prompt:**
+
+Build a frontend-only PWA shell for an educational app called "ReEnvision" — think Duolingo's visual style and structure, but with placeholder content only. No backend, no database, no curriculum logic — someone else is building those. I just need the shell: working navigation, layout, and component structure that a backend can be wired into later.
+
+**Design direction (Duolingo-style minimalism):**
+- Clean, rounded, friendly UI — generous white space, soft shadows, no clutter
+- Bold but simple color palette (2-3 main colors max, one bright accent color)
+- Large, rounded buttons with clear hover/press states
+- Friendly, readable sans-serif typography, big headings
+- Card-based layout for lessons/units
+- Smooth, simple transitions/animations between screens (not heavy)
+- Mobile-first responsive design, must also look good on desktop and Chromebook screen sizes
+
+**Pages/screens needed (placeholder data only):**
+1. **Home/Dashboard** — shows a path of "units" as a vertical node map (like Duolingo's lesson path), each unit as a circular/rounded node, locked/unlocked states
+2. **Lesson screen shell** — a generic lesson container (header, progress bar, content area, "Continue" button) with no real lesson content, just placeholder text
+3. **Streak/Progress screen** — placeholder streak counter, XP/points display, simple stats cards
+4. **Leaderboard screen shell** — placeholder ranked list UI (avatar, name, score) with dummy data
+5. **Profile screen** — placeholder avatar, username, basic stats
+
+**Technical requirements:**
+- Must be installable as a PWA (manifest.json, service worker, app icons, offline-capable shell)
+- Must work fully in a Chrome browser, including on Chromebooks — no native app store dependency
+- Use React (functional components) so a backend dev can easily plug in real data/logic later
+- Clearly comment placeholder areas in the code (e.g., `// TODO: backend hooks here`) so it's obvious where real data/curriculum content needs to be wired in
+- No real AI calls, no real user accounts, no real database — pure static/local placeholder state only
+- Keep the codebase clean and modular (separate components per screen) so it's easy for another developer to extend
+
+Do not invent real lesson content, AI features, or backend logic — this is strictly the visual/structural shell.
+
+---
+
+This should give Replit's agent enough specificity to nail the Duolingo aesthetic while keeping it strictly scoped to shell-only, so it doesn't wander into building backend or curriculum logic on its own (which Replit's agent tends to do unprompted). Let me know if you want a version that also specifies a particular color palette or component library (e.g., Tailwind + shadcn/ui) instead of leaving styling fully open-ended.
